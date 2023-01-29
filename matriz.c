@@ -1,6 +1,7 @@
 #include "matriz.h"
-#include "stdlib.h"
-
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 struct aluno{
     char *nome;
     float *notas; 
@@ -13,4 +14,14 @@ aluno_t *criar_matriz_alunos(int qntd_alunos, int qntd_notas){
         matriz_retorno[contador].notas = malloc(sizeof(float) * qntd_notas);
     }
     return matriz_retorno;
+}
+
+void ler_dados(aluno_t *matriz_main, int qntd_alunos, int qntd_notas){
+    for(int contador_alunos = 0; contador_alunos <= qntd_alunos - 1; ++contador_alunos){
+        scanf("%s", matriz_main[contador_alunos].nome);
+
+        for(int contador_notas = 0; contador_notas <= qntd_notas - 1; ++contador_notas){
+            scanf(" %d", &matriz_main[contador_alunos].notas[contador_notas]);
+        }
+    }
 }
