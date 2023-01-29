@@ -1,5 +1,4 @@
-14 3
-loren 8 8 8
+13 3
 joaquim 1 8 6
 fabricia 2 5 6
 ana 9 8 4
