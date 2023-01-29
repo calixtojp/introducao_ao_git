@@ -2,6 +2,7 @@
 #include "matriz.h"
 
 int main(){
+    printf("inicio do programa:\n");
     int qntd_alunos, qntd_notas;
     scanf("%d %d", &qntd_alunos, &qntd_notas);
 
