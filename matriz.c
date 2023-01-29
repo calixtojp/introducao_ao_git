@@ -21,7 +21,17 @@ void ler_dados(aluno_t *matriz_main, int qntd_alunos, int qntd_notas){
         scanf("%s", matriz_main[contador_alunos].nome);
 
         for(int contador_notas = 0; contador_notas <= qntd_notas - 1; ++contador_notas){
-            scanf(" %d", &matriz_main[contador_alunos].notas[contador_notas]);
+            scanf(" %f", &matriz_main[contador_alunos].notas[contador_notas]);
         }
+    }
+}
+
+void printar_matriz(aluno_t *matriz_main, int qntd_alunos, int qntd_notas){
+    for(int contador_alunos = 0; contador_alunos <= qntd_alunos - 1; ++contador_alunos){
+        printf("aluno %d: Nome:%s Notas:", contador_alunos+1, matriz_main[contador_alunos].nome);
+        for(int contador_notas = 0; contador_notas <= qntd_notas - 1; ++contador_notas){
+            printf(" %.2f", matriz_main[contador_alunos].notas[contador_notas]);            
+        }
+        printf("\n");
     }
 }

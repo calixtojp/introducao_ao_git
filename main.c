@@ -7,5 +7,8 @@ int main(){
 
     aluno_t *matriz_main = criar_matriz_alunos(qntd_alunos, qntd_notas);
     ler_dados(matriz_main, qntd_alunos, qntd_notas);
+
+    printf("leitura de dados concluída com sucesso:\n");
+    printar_matriz(matriz_main, qntd_alunos, qntd_notas);
     return 0;
 }
