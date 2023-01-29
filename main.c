@@ -6,6 +6,6 @@ int main(){
     scanf("%d %d", &qntd_alunos, &qntd_notas);
 
     aluno_t *matriz_main = criar_matriz_alunos(qntd_alunos, qntd_notas);
-    printf("matriz criada com sucesso\n");
+    printf("matriz criada com sucesso.\n");
     return 0;
 }
