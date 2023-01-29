@@ -1,0 +1,14 @@
+13 3
+joaquim 1 8 6
+fabricia 2 5 6
+ana 9 8 4
+pedro 10 9 10 
+marcia 5 7 2
+marcelo 4 5 6
+marquinhos 3 5 6
+paulo 8 3 5
+renata 7 9 8
+renato 9 2 4
+fabricio 8 3 5
+barbara 6 5 4
+fermat 10 10 10
